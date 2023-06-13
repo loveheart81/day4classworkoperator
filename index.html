@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Operator</title>
+</head>
+<body>
+    <script src="/script.js"></script>
+    <p id="variable"></p>
+
+ <h1 id="operator" style="text-align: center;"></h1>
+ <h2 id="oop" style="text-align: center;"></h2>
+ <p id="typ"></p>
+ <p id="arith"></p>
+ <p id="str"></p>
+ <p id="comp"></p>
+ <p id="log">4. </p>
+
+ <h2 id="arith2" style="text-align: center;">Arithmetic Operators</h2>
+ <p id="instruction"></p>
+ <p id="add"></p>
+ <p id="sub"></p>
+ <p id="multi"></p>
+ <p id="expo"></p>
+ <p id="divi"></p>
+ <p id="modu"></p>
+ <p id="incre"></p>
+ <p id="decre"></p>
+
+ <marquee behavior="scroll" direction="up"><h2 style="text-align: center;">Comparison Operators</h2></marquee>
+ <p id="eq"></p>
+ <p id="eqveqt"></p>
+ <p id="neq"></p>
+ <p id="neqvneqt"></p>
+ <p id="grt"></p>
+ <p id="ls"></p>
+ <p id="grteq"></p>
+ <p id="lseq"></p>
+ <p id="ternary"></p>
+
+ <h1 id="lg" style="text-align: center;">Logical Operators.</h1>
+ <p id="lg1"><h3>1. && (Logical AND)</h3></p>
+ <p id="lg2"><h3>2. || (Logical OR)</h3></p>
+ <p id="lg3"><h3>3. ! (Logical NOT)</h3></p>
+ <p id="lg4"></p>
+ <!-- <p id="lg5"></p> -->
+ <h1 style="text-align: center;">String Operators</h1>
+ <p id="sp"><h3> + Concatenetion</h3></p>
+ <p id="sp1"></p>
+ <p id="sp2"><h3> += Concatenation Assignment</h3></p>
+ <p id="sp3"></p>
+ <p><h3 style="text-align: center;">Assignment Operators</h3></p>
+
+ <p id="ao"><h3> = (Simple Assignment )</h3></p>
+ <p id="ao1"></p>
+ <p id="ao2"><h3> += (Add and Assignment)</h3></p>
+ <p id="ao3"></p>
+ <p id="ao4"><h3>−= (Subtract and Assignment)</h3></p>
+ <p id="ao5"></p>
+ <p id="ao6"><h3> *= (Multiply and Assignment)</h3></p>
+ <p id="ao7"></p>
+ <p id="ao8"><h3>%= (Modules and Assignment)</h3></p>
+ <p id="ao9"></p>
+    <script>
+    
+    document.getElementById('operator').innerHTML='Day 3 Javascript Class.'
+    document.getElementById('oop').innerHTML='Types Of Operators.'
+    document.getElementById('typ').innerHTML='We have different types of javascript operators like;'
+    document.getElementById('arith').innerHTML='1. Arithmetic Operators'
+    document.getElementById('str').innerHTML='2. Javascript String Operators'
+    document.getElementById('comp').innerHTML='3. Javascript Comparism.'
+    document.getElementById('log').innerHTML='4. Javascript Logical Operators.'
+    document.getElementById('arith2').innerHTML='Arithmetic Operators;'
+    document.getElementById('instruction').innerHTML='Here are the 8 arithmetic operators, they are used to perform arithmetic on numbers: <br>Assume variable A = 10 and variable B = 20;'
+    document.getElementById('add').innerHTML='<h2>+ (Addition)</h2>Adds two operand <br>Example: A + B = 30'
+    document.getElementById('sub').innerHTML='<h2>- (Subtraction)</h2>Subtracts the second operand from the first <br>Exampls: A - B = -10'
+    document.getElementById('multi').innerHTML='<h2>* (Multiplicaton)</h2>Multiply both operands<br>Exampls: A * B = 20'
+    document.getElementById('expo').innerHTML='** (Exponentiation) is performed using the exponentiation operator(**)'
+    document.getElementById('divi').innerHTML='<h2>/ (Divition)</h2>Divide the numerator by the denominator<br>Exampls: A / B = -2'
+    document.getElementById('modu').innerHTML='<h2>% (Modulus)</h2>Outputs the remainder of an integer division <br>Exampls: A % B = 0'
+    document.getElementById('incre').innerHTML='<h2>++(Increment)</h2>Increase an integer value by one <br>Exampls: A++ = 11'
+    document.getElementById('decre').innerHTML='<h2>--(Decrement)</h2>Decreases an integervalue by one<br>Exampls: A-- = 9'
+
+    document.getElementById('eq').innerHTML='== equal to <br>5 == 5 = true<br>"hello == "world (false)"'
+    document.getElementById('eqveqt').innerHTML='=== equal value or not equal type'
+    // document.getElementById('neq').innerHTML='!= not equal'
+    document.getElementById('neqvneqt').innerHTML='!=not equal value or not equal type<br>4! = 5 (true)<br>"open" != "open" (false)'
+    document.getElementById('grt').innerHTML='> greater than<br>10 > 5 (true)<br>3.14 > 3.1415 (false)<br>"apple">"banana"(false)'
+    document.getElementById('ls').innerHTML='< less than<br>3 < 8 (true)<br>2.71 < 3.14(true)'
+    document.getElementById('grteq').innerHTML='>= greater than or equal to<br>7 >= 7(true)<br>2.5>= 3.0(false)<br>"cat >= "dog(false)'
+    document.getElementById('lseq').innerHTML='<= less than or equal to<br>6 < 6 (true)<br>9.99 <= 9.98 (false)'
+    document.getElementById('ternary').innerHTML=' ? ternary'
+
+    // let a=20
+    // let b=2
+    // let c=a+b
+    // console.log(c)
+
+    // let a=20
+    // let b=2
+    // let c=a+b
+    // console.log(c)
+
+    document.getElementById('lg').innerHTML='Logical Operators'
+    document.getElementById('lg1').innerHTML='JavaScript supports the following logical operators;<br>Assume variable A holds 10 and variable B holds 20, then −'
+    // document.getElementById('lg5').innerHTML='let a=20<br> let b=2<br>let c=a+b<br>output=22'
+    document.getElementById('lg2').innerHTML='If both the operands are non-zero, then the condition becomes true.<br>Ex: (A && B) is true.'
+    document.getElementById('lg3').innerHTML='If any of the two operands are non-zero, then the condition becomes true.<br>Ex: (A || B) is true.'
+    document.getElementById('lg4').innerHTML='Reverses the logical state of its operand. If a condition is true, then the Logical NOT operator will make it false.<br>Ex: ! (A && B) is false.'
+    document.getElementById('sp').innerHTML=''
+    document.getElementById('sp1').innerHTML='Joining of two or more strings together to create a new string.<br>2+2=4<br>"2"+2="22"<br>"2"-2*10=0*10+0<br>8+10+"10"+2+8=18+"10=1810"+2="18102"+8="181028<br>"8"+"8"="88"<br>10-"2"="8"<br>"10"-"2"="8"<br>18+"10="1810"<br>"8"-"Ade"=NAN(Not a number)'
+    document.getElementById('sp2').innerHTML=''
+    document.getElementById('sp3').innerHTML='Also known as String Concatenation Assignment, it is a compound assignment operator used to concatenate (combine) tow strings together and assign the resulting concatenated string back to a variable.<br> Example;<br> a = "Hello"<br>b = "World"<br>c = "HelloWorld"'
+
+    document.getElementById('ao').innerHTML=''
+    document.getElementById('ao1').innerHTML='Assigns values from the right side operand to the left side operand<br>Ex: C = A + B will assign the value of A + B into C.'
+    document.getElementById('ao2').innerHTML=''
+    document.getElementById('ao3').innerHTML='It adds the right operand to the left operand and assigns the result to the left operand.<br>Ex: C += A is equivalent to C = C + A.'
+    document.getElementById('ao4').innerHTML=''
+    document.getElementById('ao5').innerHTML='It subtracts the right operand from the left operand and assigns the result to the left operand.<br>Ex: C -= A is equivalent to C = C - A.'
+    document.getElementById('ao6').innerHTML=''
+    document.getElementById('ao7').innerHTML='It multiplies the right operand with the left operand and assigns the result to the left operand.<br>Ex: C *= A is equivalent to C = C * A.'
+    document.getElementById('ao8').innerHTML=''
+    document.getElementById('ao9').innerHTML='It takes modulus using two operands and assigns the result to the left operand.<br>Ex: C %= A is equivalent to C = C % A.'
+
+
+
+    </script>
+</body>
+</html>
